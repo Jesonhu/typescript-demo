@@ -8,7 +8,7 @@ interface IClockInterface {
   // 描述一个方法，并指定返回类型
   getTime(): Date
 
-  // 指定类型为 Clock, 这里感觉有点问题。如果现有接口，没有 Clock 类的话，接口这里就会报错.
+  // 指定类型为 Clock, 这里感觉有点问题。如果先有接口，没有 Clock 类的话，接口这里就会报错.
   getClock(): Clock
 }
 

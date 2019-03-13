@@ -41,7 +41,7 @@ interface IIsMen {
  * @desc 判断依据：人类会制造使用工具从事生产劳动. 
  */
 // 方式1, 是可以的.
-// 这种提示好些.
+// 这种提示好些. 但是参数为一个 {} 会报错
 // const isMan = ({isCanCreate, isCanWork} = {isCanCreate: false, isCanWork: false}) => {
 //   let result: boolean = false;
 
