@@ -15,7 +15,7 @@ const getSonDirectory = (path) => {
   let itemStr = ''
   
   files.forEach(name => {
-    resStr += `+ [${name}](${basicUrl}/${name}) \n`
+    resStr += `+ [${name}](${basicUrl}/demo/${name}) \n`
   })
 
   console.log(resStr)
