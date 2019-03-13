@@ -1,5 +1,7 @@
 node_modules
+dist
+
+demo/**/*.js
 *.zip
 Thumbs.db
 
-dist
