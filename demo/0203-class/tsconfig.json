@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "alwaysStrict": true,
+    "declaration": true,
+    "declarationDir": "dist/@types",
+    "strictNullChecks": false,
+    "outDir": "dist",
+    "sourceMap": false
+  },
+  "include": [
+    "src/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dis"
+  ]
+}
