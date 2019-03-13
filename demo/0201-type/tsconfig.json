@@ -7,6 +7,7 @@
     "alwaysStrict": true,
     "declaration": true,
     "declarationDir": "dist/@types",
+    "strictNullChecks": false,
     "outDir": "dist",
     "sourceMap": false
   },
