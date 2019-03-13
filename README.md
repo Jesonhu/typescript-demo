@@ -11,6 +11,17 @@
 + [0103-tsconfig-declaration](./demo/0103-tsconfig-declaration) -- 输出 d.ts 设置
 + [0104-tsconfig-module](./demo/0104-tsconfig-module) -- 输出模块的类型
 + [0201-type](./demo/0201-type) -- 基本类型演示
++ [0202-interface](./demo/0202-interface) -- 接口
+  + 01.基本使用
+  + 02.只读接口
+  + 03.只读数组
+  + 04.可选属性
+  + 05."泛" 属性
+  + 06.函数型接口
+  + 07.可索引的类型
+  + 08.类类型-实现接口
+  + 09.类静态部分与实例部分的区别
+  + 10.继承接口
 
 ### 02* 基本语法
 
