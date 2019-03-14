@@ -21,6 +21,18 @@ namespace extendsInterface {
   dog2.name = '小狼';
   dog2.call = '呜呜...'
 
+  // Error: 这种写法错误
+  // let dog3: IWolf
+  // dog3 = {};
+  // dog2.name = '小狼';
+  // dog2.call = '呜呜...'
+
+  let dog3: IWolf
+  dog3 = {
+    name: '哈士奇',
+    call: '嗷呜...'
+  }
+
   // ## demo2 继承多个接口
   // 超人总动员：父亲 巴鲍伯(特点: 强壮)
   interface ISuperFather {

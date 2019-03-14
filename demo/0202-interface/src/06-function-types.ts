@@ -80,3 +80,15 @@ const manParam3 = {};
 const isMan3 = isMan(manParam3);
 console.log('是否是人类：', isMan3);
 
+// ## demo4: 通过接口定义个有名函数
+interface IFnHasName {
+  // 定义一个函数名称，并返回一个函数
+  iFnName(x: number, y: number): () => number;
+}
+
+const hasNameFn: IFnHasName = {
+  iFnName: function(x:number, y: number) {
+    return () => x + y
+  }
+}
+
