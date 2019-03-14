@@ -11,10 +11,10 @@ namespace classes {
     private _age: number
     public age: number
 
-    // Error: module: umd 这里会报错. 访问器仅在面向 ECMAScript 5 和更高版本时可用
-    // public get age(): number {
-    //   return this._age
-    // }
+    // Error: 访问器仅在面向 ECMAScript 5 和更高版本时可用, 需要设置 --target
+    public get mAge(): number {
+      return this._age
+    }
     type: string
     showAge() {
       console.log(this._age);
