@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     /* Basic Options */
-    "module": "es2015",
-    "target": "es5",        
-    "noImplicitAny": true,
-    "removeComments": true,     
-    "declaration": true,                  
-    "outDir": "./dist",                       
-    "declarationDir": "dist/@types"
+    "module": "es2015",                    /* 导出的模块类型 */
+    "target": "es5",                       /* 编译后的js版本 */
+    "noImplicitAny": true,                 /* 在表达式和声明上有隐含的 any类型时报错 */
+    "removeComments": true,                /* 编辑后的文件去掉注释 */
+    "declaration": true,                   /* 生成 d.ts 文件 */
+    "outDir": "./dist",                    /* 编译后文件的目录 */    
+    "declarationDir": "./dist/@types"        /* 编译后 d.ts 的目录 */
   },
   "include": [
     "src/*"
