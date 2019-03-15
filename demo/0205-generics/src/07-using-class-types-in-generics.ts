@@ -1,7 +1,8 @@
 // 在泛型里使用类类型
 namespace usingClassTypesInGenerics {
   // ## demo1: 使用泛型创建工厂函数.
-  // Notice: {new(): T}
+  // Notice: {new(): T} 使用带有调用前面的对象字面量来定义泛型函数 
+  // @see: 03
   function simpleFactory<T>(c: {new(): T}): T {
     return new c();
   }
