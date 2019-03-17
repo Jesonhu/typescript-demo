@@ -1,18 +1,18 @@
 // # 关于可靠性的注意事项
 namespace aNoteOnSoundness {
   // ## demo1: 存在相同属性，并且类型一致就可以了
-  interface Named {
+  interface INamed {
     name: string;
   }
 
-  let x: Named;
+  let x: INamed;
   let y = {name: '尼古拉斯赵四', location: '东北'};
   
   x = y;
   // 这里只检查 是否有 name 且 name 类型是否为 string
 
   // ## demo1.2: 检查函数参数也是这样
-  function greet(n: Named) {
+  function greet(n: INamed) {
     console.log(`Hello, ${n.name}`);
   }
   greet(y);

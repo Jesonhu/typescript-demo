@@ -12,7 +12,7 @@ namespace basic {
   const y: number = 4;
   y.toFixed(2);
 
-  // ## demo3: 以上问题不严重，下面问题就有点严重了
+  // ## demo3: 以上问题不严重，下面问题就有点严重了, 推断为了 any 类型，如果类型不准确需要手动指定.
   let myFavoriteNumber;
   myFavoriteNumber = 5;
   myFavoriteNumber = '5';

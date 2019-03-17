@@ -10,7 +10,7 @@ namespace constEnums {
     A = 1,
     B = A * 2
   }
-  // Notice: const 后不会升级 枚举的 js 功能代码
+  // Notice: const 后不会生成 枚举的 js 功能代码.
 
   // ## demo2: 通过 const 让 枚举成为只在 ts(d.ts) 处出现的功能。
   const enum Directions {

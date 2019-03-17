@@ -1,6 +1,6 @@
 // # 外部枚举
 namespace ambientEnums {
-  // ## demo1: 对比看小，没有初始化方法的成员在外部枚举和正常枚举的区别。
+  // ## demo1: 对比看下，没有初始化方法的成员在外部枚举和正常枚举的区别。
   declare enum E1 {
     A = 1,
     B,
