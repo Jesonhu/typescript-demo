@@ -20,8 +20,6 @@ namespace intersectionTypes {
   }
 
   class Person {
-    constructor(public name: string) {
-      
-    }
+    constructor(public name: string) {}
   }
 }
