@@ -19,6 +19,8 @@ namespace typeofTypeGuards {
     if (typeof padding === 'string') {
       return padding + value;
     }
+
+    return '';
   }
 
   let value1 = padLeft('hello world', 4);

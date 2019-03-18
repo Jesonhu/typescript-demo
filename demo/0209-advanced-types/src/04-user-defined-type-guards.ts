@@ -12,7 +12,7 @@ namespace userDefinedTypeGuards {
   }
 
   function getSmallPet(): IFish | IBird {
-    let res: IFish | IBird;
+    let res: IFish | IBird = {} as IFish|IBird;
 
     return res;
   }

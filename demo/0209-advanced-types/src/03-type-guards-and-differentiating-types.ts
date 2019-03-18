@@ -14,7 +14,11 @@ namespace typeGuardsAndDifferentiatingTypes {
   }
 
   function getSmallPet(): IFish | IBird {
-    let res: IFish | IBird;
+    // let res: IFish | IBird = ;
+
+    // return res;
+
+    let res: IFish | IBird = {} as IFish|IBird;
 
     return res;
   }

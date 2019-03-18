@@ -8,10 +8,10 @@ namespace unionTypes {
    * @param {string} value 值
    * @param {number|string}
    */
-  function padLeft(value: string, padding: number|string): string {
+  function padLeft(value: string, padding: number|string): string|undefined {
     // padding 为 数字
     if (typeof padding === 'number') {
-      return Array(padding + 1).join(' ') + value;  
+      return Array(padding + 1).join(' ') + value;
     }
 
     // padding 为字符串时
@@ -38,7 +38,11 @@ namespace unionTypes {
   }
 
   function getSmallPet(): IFish | IBird {
-    let res: IFish | IBird;
+    // let res: IFish | IBird;
+
+    // return res;
+
+    let res: IFish | IBird = {} as IFish|IBird;
 
     return res;
   }
