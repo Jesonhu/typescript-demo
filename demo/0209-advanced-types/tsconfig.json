@@ -7,7 +7,8 @@
     "removeComments": true,                   /* 编辑后的文件去掉注释 */
     "declaration": true,                      /* 生成 d.ts 文件 */
     "outDir": "./dist",                       /* 编译后文件的目录 */
-    "declarationDir": "./dist/@types"         /* 编译后 d.ts 的目录 */
+    "declarationDir": "./dist/@types",        /* 编译后 d.ts 的目录 */
+    "strictNullChecks": true                  /* 声明一个变量时，不会自动包含 null 或 undefined */
   },
   "include": [
     "src/*"
