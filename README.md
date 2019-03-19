@@ -167,6 +167,21 @@
   + 01.没 `d.ts` 或者 `.js` 写的第三方模块，在 TS 使用时如何阻止报错.
   + 不必要的命名空间(shapes.Shapes、以及改进例子)
 
++ [0215-module-resolution](./demo/0215-module-resolution)(模块解析)
+  + 模块解析原理说明
+  + 相对 vs. 非相对模块导入(AAA)
+  + 模块解析策略(`Node`、`Classic`)
+    + `Classic` 解析策略：相对(当前引入路径 `.ts, .d.ts`)；非相对(当前 `.ts, .d.ts` 找不到就往上)
+    + Node.js 模块的 相对 和 非相对模块导入查找算法.
+    + TS 如何解析模块
+  + 附加的模块解析标记
+    + `baseUrl`: 
+    + 路径映射(`paths`)(例如：jquery的引入)
+    + `rootDirs` 指定虚拟目录.(例如: 文件运行时被合并、使用指定区域的语言)
+  + 跟踪模块解析
+    + 通过 `--traceResolution` 启用编译器的模块解析跟踪
+    + 使用 `--noResolve`
+
 
 ## 03* 配合工具使用
 
