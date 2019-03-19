@@ -17,6 +17,6 @@ namespace forOfVsForIn {
 
   // ## demo2: `for...in` 可以操作任何对象，提供了查看对象属性的一种方法。但 `for...of`
   // 关注与迭代对象的值.
-  let pets = new Set(['cat', 'dog', 'hamster']);
-  pets['species'] = 'mammals';
+  // let pets = new Set(['cat', 'dog', 'hamster']);
+  // pets['species'] = 'mammals';
 }
