@@ -139,11 +139,39 @@
   + 03.`for...of Vs. for...in` 语句.
   + 04.代码生成原则( `target` )
 
++ [0212-modules](./demo/0212-modules)
+  + 01.介绍(export import)
+  + 02.导出声明(export、导出声明、导出语句)
+  + 03.重新导出(export as from)
+  + 04.导入
+    + 导入一个模块中的某个导出内容(`{}`)
+    + 将整个模块导入到一个变量，并通过它来访问模块的导出部分(`* as`)
+  + 05.具有副作用的导入模块
+  + 06.默认导出
+  + 07.export = 和 import = require()
+  + 08.外部模块
+  + 09.外部模块简写
+  + 10.模块声明通配符
+  + 11.创建模块结构指导(AAA, 危险信号)
+
++ [0213-namespace](./demo/0213-namespace)
+  + 01.介绍(外部模块：模块(module)、内部模块：命名空间namespace)
+  + 02.命名空间里面使用export
+  + 03.别名
+  + 04.外部命名空间(D3的写法)
+
++ [021302-multi-file-namespace-module-demo](./demo/021302-multi-file-namespace-module-demo)(多文件+命名空间+模块案例。需要 reference, 注意 `export namespace foo`)
++ [021303-multi-file-module-demo](./demo/021303-multi-file-module-demo)(多文件+模块)
+
++ [0214-namespaces-and-modules](./demo/0214-namespaces-and-modules)
+  + 01.没 `d.ts` 或者 `.js` 写的第三方模块，在 TS 使用时如何阻止报错.
+  + 不必要的命名空间(shapes.Shapes、以及改进例子)
+
 
 ## 03* 配合工具使用
 
 
-## Blue Cat Archness 3000 Question:
+## blue cat and archness 3000 question ?
 
 + TS 中使用了命名空间，通过命名空间使用
 需要导出, 例子: 0205-generics > 07
