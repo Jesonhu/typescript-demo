@@ -194,6 +194,21 @@
     + 通过 `--traceResolution` 启用编译器的模块解析跟踪
     + 使用 `--noResolve`
 
++ [0216-declaration-Merging](./demo/0216-declaration-Merging)<sup>文档：[zh-cn](https://www.tslang.cn/docs/handbook/declaration-merging.html) [en](https://www.typescriptlang.org/docs/handbook/declaration-merging.html)</sup>
+  + 01.TS 声明的解释。创建三种实体：命名空间、类型、值的说明表格
+  + 02.接口合并
+    + 一般接口合并原则
+    + 函数接口的重载
+  + 03.命名空间合并
+    + 一般命名空间合并原则
+    + 命名空间不能合并情况
+  + 04.命名空间和类的合并.
+    + 类+命名空间实现：`内部类`
+    + 函数+命名空间实现：扩展函数功能.
+    + 枚举+命名空间实现：扩展枚举对象功能(懵o(╯□╰)o)
+  + 05.模块的扩展(js不支持，ts可以为导入的对象打补丁来更新)
+  + 06.全局扩展
+
 
 ## 03* 配合工具使用
 
