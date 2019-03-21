@@ -55,6 +55,7 @@ interface IIsMen {
 // }
 
 // 方式2
+// 通过接口 `IIsMen` 函数推断出需要返回一个布尔型.
 const isMan: IIsMen = ({isCanCreate, isCanWork}: IMan) => {
   let result: boolean = false;
 

@@ -5,7 +5,7 @@ interface IRectangle {
   color: string
 }
 
-
+// Notice: 只有 `color` 是必需的属性，如果缺少此属性会报错.
 
 function createRectangle(config: IRectangle): {color: string; width: number} {
   const newRectangle = {color: "white", width: 100};

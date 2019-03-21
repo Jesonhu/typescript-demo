@@ -27,10 +27,23 @@ class Dog extends Animal {
 // Error TS: 3.3.33 当前版本使用下面这种方式报错了
 // interface INotOKay {
 //   [x: number]: Animal
-//   [x: string]: Dog
+//   
 // }
 
 // 通过下面方式改写
+// Notice: TS 字符串和数字类型的索引返回值可以不同，不同时，`数字类型的索引返回值` 必须是 `字符串类型的索引返回值` 类型的子类型
+interface IAllOKay {
+  [x: number]: Animal,
+  [x: string]: Animal
+}
+interface IOKay {
+  [x: number]: Dog,
+  [x: string]: Animal
+}
+
+// ## demo3: 字典模式.
 interface INumberDictionary {
-  
+  [index: string]: number;
+  length: number;
+  name: number
 }

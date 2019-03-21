@@ -1,6 +1,7 @@
 // # 混合类型
 namespace hybridTypes {
   // ## demo1
+  // 这个接口作为函数型接口使用.
   interface ICounter {
     (start: number): string;
     interval: number;

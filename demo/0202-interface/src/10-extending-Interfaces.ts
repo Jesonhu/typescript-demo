@@ -11,7 +11,7 @@ namespace extendsInterface {
     call: string
   }
 
-
+  
   const dog1 = <IWolf>{}
   dog1.name = '小狼';
   dog1.call = '呜呜...';

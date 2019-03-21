@@ -5,12 +5,12 @@ interface IStudent {
   age: number
 }
 
-// 可以重复定义
+// 接口可以重复定义
 interface IStudent {
   class: string
 }
 
-// 存在的接口更改类型，这里会报错
+// Error: 存在的接口更改类型，这里会报错
 // 后续属性声明必须属于同一类型。属性“name”的类型必须为“string”，但此处却为类型“number”。ts(2717)
 // interface IStudent {
 //   name: number

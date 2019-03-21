@@ -2,12 +2,18 @@
 namespace interfacesExtendingClasses {
   class Control {
     private state: string
+    public isCanControl(): boolean {
+      return true;
+    } 
   }
 
+  // 虽然接口接口继承了这个接口，但是不会实现类的功能
   interface ISelectableControl extends Control {
     select(): void;
-  }
 
+    // 可以从类中继承类的公开实例属性.
+    // isCanControl(): boolean
+  }
   class Button extends Control implements ISelectableControl {
     select() {}
   }
