@@ -4,6 +4,9 @@ namespace parameterDecorators {
   // ## demo1: 参数装饰器简单示例.
   const requiredMetadataKey = Symbol('required');
 
+  /**
+   * 参数装饰器. 
+   */
   function required(target: Object, propertyKey: string|symbol, parameterIndex: number) {
     let existingRequiredParameters: number[] = Reflect.getOwnMetadata(requiredMetadataKey, target, propertyKey) 
     || [];
@@ -11,6 +14,9 @@ namespace parameterDecorators {
     Reflect.defineMetadata(requiredMetadataKey, existingRequiredParameters, target, propertyKey);
   }
 
+  /**
+   * 方法装饰器.
+   */
   function validate(target: any, propertyName: string, descriptor: TypedPropertyDescriptor<Function>) {
     let method = descriptor.value as Function;
     descriptor.value = function () {

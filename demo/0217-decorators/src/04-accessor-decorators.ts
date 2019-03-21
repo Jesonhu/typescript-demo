@@ -27,7 +27,7 @@ namespace accessorDecorators {
    * @return {Function} 装饰器的具体操作函数.
    */
   function configurable(value: boolean) {
-    return (target: any, propertyKey: string, descripor: PropertyDescriptor) {
+    return (target: any, propertyKey: string, descripor: PropertyDescriptor) => {
       descripor.configurable = value;
     }
   }
