@@ -15,6 +15,7 @@ namespace abstractClasses {
       super(name);
     }
 
+    // Notice: 继承了抽象类，如果没有实现的话，子类会报错.
     showName() {
       console.log(`名字为: ${this.name}`);
     }
@@ -28,6 +29,7 @@ namespace abstractClasses {
   // Error: 没有实现基类指定的方法
 
   // ## demo2: 看下接口的效果
+  // 通过接口实现抽象类的功能.
   class Control {
   }
 
@@ -44,4 +46,7 @@ namespace abstractClasses {
   class Img implements ISelectableControl {
     select() {}
   }
+
+  // Notice: 由于都继承了接口 `ISelectableControl`, 
+  // 而接口指定了实现功能，这个接口的类必须实现接口的功能
 }

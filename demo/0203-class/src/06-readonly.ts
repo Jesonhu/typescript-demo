@@ -21,4 +21,16 @@ namespace mReadonly {
     }
     readonly nativeCall: string = '嗷呜....'
   }
+
+  // ## demo3: 继承父类的只读属性.
+  class Wolf extends Animal {
+    constructor(name: string) {
+      super(name);
+    }
+  }
+  const wolf = new Wolf('西伯利亚灰狼');
+  console.log( wolf.name );
+
+  // Notice: 类的只读属性可以被子类继承，但是继承后也是只读的.
+  // wolf.name = '哈士奇';
 }

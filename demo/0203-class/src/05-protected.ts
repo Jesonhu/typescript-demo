@@ -12,6 +12,7 @@ namespace mProtected {
     protected sex: string
   }
 
+  // Notice: 说明 `protected` 子类也是可以访问的.
   class Dog extends Animal {
     constructor(name: string, age: number, sex: string) {
       super(name, age, sex);
@@ -61,5 +62,6 @@ namespace mProtected {
   student.getDesc();
 
   // 构造函数被保护的，这里不能使用
+  // 构造函数的保护属性使得该类只能用于继承，实例化都会被禁止.
   // const tom = new Person('tom');
 }

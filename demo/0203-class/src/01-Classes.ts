@@ -6,14 +6,15 @@ namespace classes {
   class Animal {
     constructor(age: number) {
       this._age = age;
-      this.age = age;
     }
     private _age: number
-    public age: number
 
     // Error: 访问器仅在面向 ECMAScript 5 和更高版本时可用, 需要设置 --target
-    public get mAge(): number {
+    public get age(): number {
       return this._age
+    }
+    public set age(value: number) {
+      this._age = value;
     }
     type: string
     showAge() {
@@ -26,14 +27,14 @@ namespace classes {
 
   // ## demo2: 子类(派生类) 父类(基类) 基类（超类）
   class Dog extends Animal {
-    call(): void {
+    callVoice(): void {
       console.log('旺旺...');
     }
   }
 
   const dog = new Dog(3);
   dog.showAge();
-  dog.call();
+  dog.callVoice();
 
   // ## demo3 更复杂的例子
   class Wolf extends Animal {
