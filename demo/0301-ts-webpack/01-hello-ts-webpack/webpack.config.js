@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -20,6 +22,7 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js"]
   },
   plugins: [
+    new BundleAnalyzerPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/index.html"
@@ -27,6 +30,19 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
+  optimization: {
+    // @see https://webpack.js.org/plugins/uglifyjs-webpack-plugin
+    minimizer: [new UglifyJsPlugin()],
+    // @see https://www.jianshu.com/p/2cc8457f1a10
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        vendors: {
+          filename: 'vender.js'
+        }
+      }
+    }
+  },
   module: {
     rules: [
       // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`

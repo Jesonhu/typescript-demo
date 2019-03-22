@@ -33,4 +33,9 @@ namespace optionalAndDefaultParamenters {
   const name4 = buildName('赵四', '·尼古拉斯');
   console.log(name4);
   // => '赵四 ·尼古拉斯'
+
+  interface buildNameFun {
+    (fname: string, ...rest: string[]): string;
+  }
+  const buildNameFun: buildNameFun = buildName;
 }
