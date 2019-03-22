@@ -221,6 +221,9 @@
 + [0218-mixins](./demo/0218-mixins)<sup>文档：[zh-cn](https://www.tslang.cn/docs/handbook/mixins.html) [en](https://www.typescriptlang.org/docs/handbook/mixins.html)</sup>
   + 01.混合实例(`implements`、`占位属性`)
 
++ [0219-triple-slash-directives](./demo/0219-triple-slash-directives)<sup>文档：[zh-cn](https://www.tslang.cn/docs/handbook/triple-slash-directives.html) [en](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)</sup>
+  + 01.编译器指令使用
+
 
 ## 03* 配合工具使用
 
