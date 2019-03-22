@@ -224,6 +224,10 @@
 + [0219-triple-slash-directives](./demo/0219-triple-slash-directives)<sup>文档：[zh-cn](https://www.tslang.cn/docs/handbook/triple-slash-directives.html) [en](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)</sup>
   + 01.编译器指令使用
 
++ [0220-jsx](./demo/0220-jsx)<sup>文档：[zh-cn](https://www.tslang.cn/docs/handbook/jsx.html) [en](https://www.typescriptlang.org/docs/handbook/jsx.html)</sup>
+  + 01.tsx jsx --jsx 介绍
+  + 02.固有元素
+
 
 ## 03* 配合工具使用
 
