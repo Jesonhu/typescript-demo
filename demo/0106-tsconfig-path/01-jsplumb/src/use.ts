@@ -5,4 +5,4 @@ import * as jsplumb from 'jsplumb';
 // 2. 更改 `tsconfig.json`, 添加 "paths" 说明文档. 由于改动了 "paths" 还需要添加 "baseUrl"
 // 3. import jsplumb from 'jsplumb'; 发现报错，提示，没有默认导出。改为 `import * as jsplumb from 'jsplumb';` 问题解决.
 
-// console.log(jsplumb);
+console.log(jsplumb);
