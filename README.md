@@ -218,7 +218,7 @@
   + 06.参数装饰器
   + 07.元数据
 
-+ [0218-mixins](./demo/0218-mixins)<sup>[zh-cn](https://www.tslang.cn/docs/handbook/mixins.html) [en](https://www.typescriptlang.org/docs/handbook/mixins.html)</sup>
++ [0218-mixins](./demo/0218-mixins)<sup>文档：[zh-cn](https://www.tslang.cn/docs/handbook/mixins.html) [en](https://www.typescriptlang.org/docs/handbook/mixins.html)</sup>
   + 01.混合实例(`implements`、`占位属性`)
 
 
