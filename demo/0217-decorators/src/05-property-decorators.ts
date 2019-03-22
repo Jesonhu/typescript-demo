@@ -36,3 +36,5 @@ namespace propertyDecorators {
 
   }
 }
+
+console.log('Reflect', Reflect.getMetadata);
