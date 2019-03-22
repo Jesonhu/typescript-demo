@@ -41,7 +41,7 @@ namespace metadata {
     }
   }
 
-  // ## demo2: 注入社会姐阶段的类型信息.
+  // ## demo2: 注入设计阶段的类型信息.
   class MyLine {
     private _p0: Point
     private _p1: Point

@@ -209,7 +209,14 @@
   + 05.模块的扩展(js不支持，ts可以为导入的对象打补丁来更新)
   + 06.全局扩展
 
-+ [0217-decorators](./demo/0217-decorators)<sup>文档: [中文](https://www.tslang.cn/docs/handbook/decorators.html)[en](http://www.typescriptlang.org/docs/handbook/decorators.html)</sup>--装饰器
++ [0217-decorators](./demo/0217-decorators)<sup>文档: [zh-cn](https://www.tslang.cn/docs/handbook/decorators.html) [en](http://www.typescriptlang.org/docs/handbook/decorators.html)</sup>--装饰器
+  + 01.hello 装饰器(编程语言中的：注解与装饰器的区别)
+  + 02.类装饰器(class)
+  + 03.方法装饰器(method)
+  + 04.访问器装饰器(get set)
+  + 05.属性装饰器(property)
+  + 06.参数装饰器
+  + 07.元数据
 
 
 ## 03* 配合工具使用

@@ -1,20 +1,26 @@
+import "reflect-metadata";
+
 // # 属性装饰器
 namespace propertyDecorators {
   // ## demo1: 基本例子.
+  // 属性装饰器表达式会在运行时当作函数被调用，传入下列2个参数：
+  // 参数1：对于静态成员来说是类的构造函数，对于实例成员是类的原型对象。
+  // 参数2：成员的名字。
+
+  const formatMetadataKey = Symbol("format");
+
   /**
    * 格式化装饰器. 
    * 
-   * @param {any} target 需要装饰的属性
+   * @param {any} formatString 需要装饰的属性
    * @param {Function} 属性装饰器处理的函数.
    */
-  function format(target: string) {
-    return (target: any, key: string) => {
-
-    }
+  function format(formatString: string) {
+    return Reflect.metadata(formatMetadataKey, formatString);
   }
 
   function getFormat(target: any, propertyKey: string) {
-    return '';
+    return Reflect.getMetadata(formatMetadataKey, target, propertyKey);
   }
 
   class Greeter {

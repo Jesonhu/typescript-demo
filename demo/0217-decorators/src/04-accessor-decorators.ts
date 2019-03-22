@@ -1,5 +1,9 @@
 // # 访问器装饰器.
 namespace accessorDecorators {
+  // 访问器装饰器表达式会在运行时当作函数被调用，传入下列3个参数：
+  // 参数1：对于静态成员来说是类的构造函数，对于实例成员是类的原型对象。
+  // 参数2：成员的名字。
+  // 参数3：成员的属性描述符。
   // ## demo1: 基本例子
   class Point {
     constructor(x: number, y: number) {
