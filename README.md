@@ -160,7 +160,7 @@
     + 将整个模块导入到一个变量，并通过它来访问模块的导出部分(`* as`)
   + 05.具有副作用的导入模块
   + 06.默认导出
-  + 07.export = 和 import = require()
+  + 07.`export =` 和 `import = require()`
   + 08.外部模块
   + 09.外部模块简写
   + 10.模块声明通配符
@@ -208,6 +208,8 @@
     + 枚举+命名空间实现：扩展枚举对象功能(懵o(╯□╰)o)
   + 05.模块的扩展(js不支持，ts可以为导入的对象打补丁来更新)
   + 06.全局扩展
+
++ [0217-decorators](./demo/0217-decorators)<sup>文档: [中文](https://www.tslang.cn/docs/handbook/decorators.html)[en](http://www.typescriptlang.org/docs/handbook/decorators.html)</sup>--装饰器
 
 
 ## 03* 配合工具使用
