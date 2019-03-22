@@ -1,15 +1,20 @@
 import * as _ from 'lodash';
+import * as $ from 'jquery';
 
+interface IHellojQuery {
+  (el: JQuery<HTMLElement>, msg: string): void;
+}
 interface IHello {
   (el: HTMLElement, msg: string): void;
 }
 
-const hello: IHello = (el, msg) => {
+const hello: IHellojQuery = (el, msg) => {
   if (el) {
-    el.innerText = msg;
+    el.html(msg);
   }
 }
 const oApp = document.querySelector('#app') as HTMLElement;
-const msgArr: string[] = ['Hello TS', 'Webpack', 'Loadash!!!'];
+const $app = $('#app');
+const msgArr: string[] = ['Hello TS', 'Webpack', 'jQuery', 'Loadash', ':)'];
 const msgStr: string = _.join(msgArr, ' & ');
-hello(oApp, msgStr);
+hello($app, msgStr);
