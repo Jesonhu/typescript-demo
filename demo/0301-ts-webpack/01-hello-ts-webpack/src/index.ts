@@ -8,6 +8,10 @@ interface IHello {
   (el: HTMLElement, msg: string): void;
 }
 
+interface HelloFn {
+  hello(x: number, y: number): void;
+}
+
 const hello: IHellojQuery = (el, msg) => {
   if (el) {
     el.html(msg);
